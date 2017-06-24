@@ -1,21 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+  <head>
+    <title>{{ page.title }}</title>
 
-	{% include head.html %}
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
 
-	<body>
-		<div class="container">
+  </head>
 
-			{% include header.html %}
 
-			{{ content }}
+  <body>
+    <nav>
+<ul>
+<li><a href="/">Home</a></li>
+<li><a href="/about">About</a></li>
+<li><a href="/cv">CV</a></li>
+<li><a href="/blog">Blog</a></li>
+</ul>
+    </nav>
+<div class="container">
 
-			{% include footer.html %}
+  {{ content }}
 
-		</div> <!-- /container -->
+</div>
 
-		{% include scripts.html %}
-
-	</body>
+  <footer>
+   <ul>
+   <li><a href="mailto:ethanpgould@gmail.com">email</a></li>
+   <li><a href="https://github.com/ethanpgould">github.com/hankquinlan</a></li>
+   </ul>
+  </footer>
+  </body>
 
 </html>
